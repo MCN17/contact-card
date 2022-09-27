@@ -1,3 +1,6 @@
+// Import Functions
+import {initdb} from './database';
+
 // Import modules
 import "./form";
 import "./submit";
@@ -13,6 +16,7 @@ import Bear from '../images/bear.png';
 import Dog from '../images/dog.png';
 
 window.addEventListener('load', function () {
+    initdb();
     document.getElementById('logo').src = Logo;
     document.getElementById('bearThumbnail').src = Bear;
     document.getElementById('dogThumbnail').src = Dog;
